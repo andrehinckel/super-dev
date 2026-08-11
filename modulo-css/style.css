@@ -3,9 +3,18 @@
 }
 
 body {
+    font-family: system-ui, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
     background-color: #faf9f7;
     color: #2a2a2a;
-    margin: 24px;
+    margin: 1.5rem;
+}
+
+main {
+    width: 90%;
+    max-width: 70rem;
+    margin: 0;
 }
 
 h1 {
@@ -28,12 +37,13 @@ header {
 nav a {
     color: #e8622c;
     text-decoration: none;
-    padding: 4px 8px;
+    padding: 0.5em 0.75em;
 }
 
 nav a:hover {
     background-color: #ffe8dd;
 }
+
 
 .destaque {
     background-color: #fff4ec;
@@ -77,9 +87,17 @@ label {
 input,
 textarea,
 select {
+    width: 100%;
     padding: 4px;
     border: 1px solid #d5d1ca;
+    border-radius: 5px;
     margin-bottom: 8px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #e8622c;
 }
 
 button {

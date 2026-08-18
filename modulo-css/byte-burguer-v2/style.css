@@ -1,0 +1,148 @@
+:root {
+    --color-primary: #e8622c;
+    --color-text: #2a2a2a;
+    --color-background: #faf9f7;
+    --color-border: #e5e2dd;
+    --color-primary-dark: #c94f1f;
+
+    --radius-small: 0.5rem;
+    --radius-medium: 1rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-background);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.site-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--color-border);
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+
+h1 {
+    max-width: 14ch;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    line-height: 1.05;
+}
+
+.container {
+    width: 90%;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.header-content {
+    min-height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.brand {
+    color: var(--color-text);
+    font-size: 1.35rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.main-nav a {
+    display: inline-block;
+    padding: 0.6rem 0.85rem;
+    color: var(--color-text);
+    border-radius: var(--radius-small);
+    text-decoration: none;
+}
+
+.main-nav a:hover,
+.main-nav a[aria-current="page"] {
+    background-color: #fff0e9;
+    color: var(--color-primary-dark);
+}
+
+.eyebrow {
+    margin-bottom: 0.5rem;
+    color: var(--color-primary-dark);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.hero {
+    padding: 5rem 0 4rem;
+}
+
+.hero-content {
+    max-width: 48rem;
+}
+
+.hero-text {
+    max-width: 60ch;
+    font-size: 0.9rem;
+    color: #6f6a65;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.button {
+    padding: 0.75rem 1.1rem;
+    border: 1px solid transparent;
+    border-radius: var(--radius-small);
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+.button-primary {
+    background-color: var(--color-primary);
+    color: #ffffff;
+}
+
+.button-primary:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.button-secondary {
+    background-color: transparent;
+    border-color: var(--color-border);
+    color: var(--color-text);
+}
+
+.button-secondary:hover {
+    border-color: var(--color-primary);
+}

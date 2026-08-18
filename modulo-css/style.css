@@ -35,6 +35,7 @@ header {
 }
 
 nav a {
+    display: inline-block;
     color: #e8622c;
     text-decoration: none;
     padding: 0.5em 0.75em;

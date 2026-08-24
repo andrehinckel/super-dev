@@ -289,3 +289,104 @@ h1 {
     color: var(--color-text);
     font-size: 1.3rem;
 }
+
+.reservation-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.form-card,
+.contact-card {
+    padding: 2rem;
+    background-color: #ffffff;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+    box-shadow: 0 0.5rem 1.5rem rgb(42 42 42 / 8%);
+}
+
+.field {
+    margin-bottom: 1rem;
+}
+
+.field label {
+    display: block;
+    font-weight: 700;
+}
+
+.field input,
+.field select,
+.field textarea {
+    width: 100%;
+    padding: 0.25rem;
+
+    border: 1px solid #d5d1ca;
+    border-radius: var(--radius-small);
+    background-color: #ffffff;
+    color: var(--color-text);
+}
+
+.field textarea {
+    min-height: 3rem;
+    resize: vertical;
+}
+
+.contact-card p {
+    color: var(#6f6a65);
+}
+
+@media (max-width: 48rem) {
+    h1 {
+        max-width: none;
+        font-size: 2.25rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+
+    .brand {
+        text-align: center;
+    }
+
+    .main-nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        padding: 3rem 0;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .hero-actions .button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section,
+    .page-intro {
+        padding: 3rem 0;
+    }
+
+    .feature-list {
+        flex-direction: column;
+    }
+
+    .menu-grid,
+    .drinks-grid,
+    .reservation-layout {
+        grid-template-columns: 1fr;
+    }
+}

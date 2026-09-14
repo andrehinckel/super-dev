@@ -2,33 +2,55 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
+    font-family: system-ui, Arial, sans-serif;
+    font-size: 1rem;
     background-color: #faf9f7;
     color: #2a2a2a;
-    margin: 24px;
+    margin: 1.5rem;
+    line-height: 1.5;
+}
+
+main {
+    width: 90%;
+    max-width: 70rem;
+    margin: 0;
 }
 
 h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
     color: #e8622c;
 }
 
 h2 {
+    font-size: 1.75rem;
     color: #2a2a2a;
     margin-top: 32px;
     margin-bottom: 8px;
+    letter-spacing: 0.02em;
+}
+
+h2::before {
+    content: "# ";
+    color: #e8622c;
 }
 
 header {
     background-color: white;
     padding: 16px;
     border-bottom: 3px solid #e8622c;
-    margin-bottom: 24px;
 }
 
 nav a {
+    display: inline-block;
     color: #e8622c;
     text-decoration: none;
-    padding: 4px 8px;
+    padding: 0.5rem 0.75rem;
 }
 
 nav a:hover {
@@ -36,6 +58,7 @@ nav a:hover {
 }
 
 .destaque {
+    display: none;
     background-color: #fff4ec;
     border-left: 4px solid #e8622c;
     padding: 8px 12px;
@@ -59,7 +82,7 @@ li {
 
 th,
 td {
-    border: 2px solid #e5e2dd;
+    border: 2px 2px 0px 2px solid #e5e2dd;
     padding: 8px 12px;
     text-align: left;
 }
@@ -79,7 +102,18 @@ textarea,
 select {
     padding: 4px;
     border: 1px solid #d5d1ca;
-    margin-bottom: 8px;
+    border-radius: 4px;
+    font-family: inherit;
+    font-family: inherit;
+    box-shadow: 4px 4px 6px -3px rgba(0, 0, 0, 0.3); 
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #e8622c;
+    outline: 1px solid #e8622c;
+    outline-offset: 1px;
 }
 
 button {
@@ -97,4 +131,12 @@ footer {
     padding-left: 10px;
     border: 1px solid #e5e2dd;
     color: #8b8680;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f5f3f0;
+}
+
+tbody tr:hover {
+    background-color: fuchsia;
 }

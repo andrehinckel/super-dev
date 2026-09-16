@@ -78,3 +78,25 @@ const desbloqueado = true;
 
 console.log(desbloqueado) */
 
+const valorCompra = 850;
+const clienteVip = true;
+let valorDesconto = 0;
+
+if (clienteVip && valorCompra >= 500) {
+    //Aplicar 20% de desconto
+    valorDesconto = valorCompra * 20 / 100;
+}
+else if (clienteVip) {
+    valorDesconto = valorCompra * 10 / 100;
+}
+else if (valorCompra >= 500) {
+    valorDesconto = valorCompra * 5 / 100;
+}
+else {
+    valorDesconto = 0;
+}
+
+const valorFinal = valorCompra - valorDesconto;
+
+console.log("Valor desconto:", valorDesconto);
+console.log("Valor Final:", valorFinal);
